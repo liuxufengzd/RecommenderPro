@@ -5,6 +5,7 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SaveMode;
 import org.apache.spark.sql.SparkSession;
+import org.apache.spark.sql.streaming.Trigger;
 import org.liu.constant.Constant;
 import org.liu.util.Utils;
 
@@ -64,6 +65,7 @@ public abstract class BaseApp implements Serializable {
                         .partitionBy(partitionColumns)
                         .option("checkpointLocation", Utils.getTableCheckpointPath(layer, tableName))
                         .option("path", Utils.getTablePath(layer, tableName))
+                        .trigger(Trigger.AvailableNow())
                         .toTable(Utils.getTableName(layer, tableName))
                         .awaitTermination();
             } catch (Exception e) {

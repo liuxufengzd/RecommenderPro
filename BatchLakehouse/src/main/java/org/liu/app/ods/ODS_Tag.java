@@ -20,7 +20,12 @@ public class ODS_Tag extends BaseApp {
         Dataset<Row> source = KafkaReader(Constant.Topic_Tag);
         source = source.select(
                         from_json(col("value"), getSchema()).as("value")
-                ).select("value.uid", "value.mid", "value.tag", "value.time")
+                ).select(
+                        col("value.uid").as("uid"),
+                        col("value.mid").as("mid"),
+                        col("value.tag").as("tag"),
+                        col("value.time").as("time")
+                )
                 .withColumn("date", lit(args[0]));
         TableWriter(source, Constant.LAYER_ODS, "Tag", "date", true);
     }

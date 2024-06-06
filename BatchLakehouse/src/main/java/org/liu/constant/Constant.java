@@ -16,6 +16,7 @@ public class Constant {
     public static final String LAYER_ODS = "OperationalDataStore";
     public static final String LAYER_DWD = "DataWarehouseDetail";
     public static final String LAYER_DWS = "DataWarehouseSummary";
+    public static final String LAYER_DIM = "Dimension";
 
     // Topics
     public static final String Topic_Tag = "tag";

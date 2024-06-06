@@ -53,6 +53,17 @@ public abstract class BaseApp implements Serializable {
         return spark.read().jdbc(url, tableName, properties);
     }
 
+    public void DatabaseWriter(Dataset<Row> dataset, String tableName) {
+        String url = "jdbc:mysql://" + Constant.DB_HOST + "/" + Constant.DB_DATABASE + "?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf-8";
+        Properties properties = new Properties();
+        properties.put("driver", Constant.DB_DRIVER);
+        properties.put("user", Constant.DB_USERNAME);
+        properties.put("password", Constant.DB_PWD);
+
+        dataset.write().jdbc(url, tableName, properties);
+    }
+
+
     public Dataset<Row> TableReader(String layer, String tableName) {
         return DeltaTable.forName(spark, Utils.getTableName(layer, tableName)).toDF();
     }
@@ -75,7 +86,7 @@ public abstract class BaseApp implements Serializable {
             if (dataset.isEmpty()) return;
             dataset.write()
                     .format("delta")
-                    .mode(SaveMode.Append)
+                    .mode(SaveMode.Overwrite)
                     .partitionBy(partitionColumns)
                     .option("path", Utils.getTablePath(layer, tableName))
                     .saveAsTable(Utils.getTableName(layer, tableName));

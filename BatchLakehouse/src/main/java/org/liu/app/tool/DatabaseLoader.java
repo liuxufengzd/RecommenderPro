@@ -2,19 +2,19 @@ package org.liu.app.tool;
 
 import org.apache.spark.sql.SparkSession;
 import org.liu.app.BaseApp;
-import org.liu.util.Utils;
 
 import static org.liu.util.Utils.getLayer;
 
-public class DeleteTable extends BaseApp {
+public class DatabaseLoader extends BaseApp {
     public static void main(String[] args) {
-        new DeleteTable().run(args, 1);
+        new DatabaseLoader().run(args, 1);
     }
 
     @Override
     public void process(String[] args, SparkSession spark) {
         String layer = getLayer(args[0]);
-        String table = args[1];
-        spark.sql("DROP TABLE IF EXISTS " + Utils.getTableName(layer, table));
+        String sourceTable = args[1];
+        String sinkTable = args[2];
+        DatabaseWriter(TableReader(layer, sourceTable), sinkTable);
     }
 }

@@ -20,7 +20,12 @@ public class ODS_Rating extends BaseApp {
         Dataset<Row> source = KafkaReader(Constant.Topic_Rating);
         source = source.select(
                         from_json(col("value"), getSchema()).as("value")
-                ).select("value.uid", "value.mid", "value.score", "value.time")
+                ).select(
+                        col("value.uid").as("uid"),
+                        col("value.mid").as("mid"),
+                        col("value.score").as("score"),
+                        col("value.time").as("time")
+                )
                 .withColumn("date", lit(args[0]));
         TableWriter(source, Constant.LAYER_ODS, "Rating", "date", true);
     }

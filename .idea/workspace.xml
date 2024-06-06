@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9c28872-9f8c-43de-a4da-a564e82d2ec1" name="Changes" comment="init" />
+    <list default="true" id="d9c28872-9f8c-43de-a4da-a564e82d2ec1" name="Changes" comment="init">
+      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dws/DWS_MovieRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dws/DWS_Rating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DatabaseLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/BaseApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dim/DIM_Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Rating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DeleteTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DeleteTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/ViewTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/ViewTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/util/Utils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,9 +41,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2hSZiAUtO6kRwphKnMvroQgQZTA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -47,6 +60,8 @@
     "Maven.BatchLakehouse [compile].executor": "Run",
     "Maven.BatchLakehouse [package].executor": "Run",
     "Maven.BatchLakehouse [test].executor": "Run",
+    "Maven.RecommenderPro [compile].executor": "Run",
+    "Maven.RecommenderPro [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,6 +78,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.liu.app.dim" />
+      <recent name="org.liu.app.dws" />
       <recent name="org.liu.app" />
       <recent name="org.liu.app.ods" />
     </key>
@@ -103,6 +120,8 @@
       <option name="presentableId" value="Default" />
       <updated>1717589565823</updated>
       <workItem from="1717589566952" duration="10265000" />
+      <workItem from="1717603017608" duration="145000" />
+      <workItem from="1717678730674" duration="9715000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -112,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717602639810</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1717603159516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717603159516</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

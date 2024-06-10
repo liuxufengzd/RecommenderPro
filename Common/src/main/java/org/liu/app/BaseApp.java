@@ -5,6 +5,7 @@ import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SaveMode;
 import org.apache.spark.sql.SparkSession;
+import org.apache.spark.sql.streaming.StreamingQueryException;
 import org.apache.spark.sql.streaming.Trigger;
 import org.liu.constant.Constant;
 import org.liu.util.Utils;
@@ -23,7 +24,7 @@ public abstract class BaseApp implements Serializable {
                 .master("yarn")
                 .config("spark.sql.shuffle.partitions", parallelism)
                 .config("spark.sql.sources.partitionOverwriteMode", Constant.PARTITION_OVERWRITE_MODE)
-                .config("spark.sql.warehouse.dir", Constant.WAREHOUSE_DIR)
+                .config("spark.sql.warehouse.dir", Constant.WAREHOUSE_BATCH_DIR)
                 .config("hive.metastore.uris", Constant.METASTORE_URI)
                 .config("spark.sql.adaptive.enabled", true)
                 .config("spark.sql.extensions", Constant.SPARK_EXTENSIONS)
@@ -32,6 +33,32 @@ public abstract class BaseApp implements Serializable {
                 .getOrCreate();
         process(args, spark);
         spark.stop();
+    }
+
+    public void runStream(String[] args, int parallelism) {
+        spark = SparkSession.builder()
+                .appName(this.getClass().getSimpleName())
+                .master("yarn")
+                .config("spark.sql.shuffle.partitions", parallelism)
+                .config("spark.sql.sources.partitionOverwriteMode", Constant.PARTITION_OVERWRITE_MODE)
+                .config("spark.sql.warehouse.dir", Constant.WAREHOUSE_STREAM_DIR)
+                .config("hive.metastore.uris", Constant.METASTORE_URI)
+                .config("spark.sql.streaming.stateStore.providerClass", Constant.ROCKSDB_STATE_STORE)
+                .config("spark.sql.streaming.stateStore.rocksdb.changelogCheckpointing.enabled", true)
+                .config("spark.sql.streaming.forceDeleteTempCheckpointLocation", true)
+                .config("spark.sql.adaptive.enabled", true)
+                .config("spark.sql.extensions", Constant.SPARK_EXTENSIONS)
+                .config("spark.sql.catalog.spark_catalog", Constant.SPARK_CATALOG)
+                .enableHiveSupport()
+                .getOrCreate();
+
+        process(args, spark);
+
+        try {
+            spark.streams().awaitAnyTermination();
+        } catch (StreamingQueryException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public Dataset<Row> KafkaReader(String topic) {

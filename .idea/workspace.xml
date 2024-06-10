@@ -5,18 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9c28872-9f8c-43de-a4da-a564e82d2ec1" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dws/DWS_MovieRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dws/DWS_Rating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DatabaseLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/client/HBaseClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/util/HBaseConnectionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/src/main/java/org/liu/app/bean/RecommendationLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/src/main/java/org/liu/app/model/ALSModelPredictor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/src/main/java/org/liu/app/model/ALSModelTrainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LatentFactorModel/src/main/java/org/liu/app/model/TFIDFModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/dependency-reduced-pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/src/main/java/org/liu/app/RecommendApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/src/main/java/org/liu/bean/RatingDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/src/main/java/org/liu/bean/RecommendDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamingLakeHouse/src/main/java/org/liu/util/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/BaseApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/dim/DIM_Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Rating.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Rating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/ods/ODS_Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DeleteTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DeleteTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/ViewTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/ViewTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/dependency-reduced-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/dependency-reduced-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BatchLakehouse/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/app/BaseApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DatabaseLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/tool/DatabaseLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/DeleteTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/tool/DeleteTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/app/tool/ViewTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/tool/ViewTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BatchLakehouse/src/main/java/org/liu/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/liu/util/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +55,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://scala-decompiled/Rating.decompiled.java" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -55,42 +75,85 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.ALSTrainer.executor": "Run",
+    "Application.Main (1).executor": "Run",
+    "Application.Main.executor": "Run",
     "Application.ODS_Movie.executor": "Run",
+    "Application.RecommendApp.executor": "Run",
+    "Application.TFIDFModel.executor": "Run",
     "Maven.BatchLakehouse [clean].executor": "Run",
     "Maven.BatchLakehouse [compile].executor": "Run",
     "Maven.BatchLakehouse [package].executor": "Run",
     "Maven.BatchLakehouse [test].executor": "Run",
+    "Maven.LatentFactorModel [clean].executor": "Run",
+    "Maven.LatentFactorModel [compile].executor": "Run",
+    "Maven.LatentFactorModel [package].executor": "Run",
+    "Maven.LatentFactorModel [test].executor": "Run",
+    "Maven.RecommenderPro [clean].executor": "Run",
     "Maven.RecommenderPro [compile].executor": "Run",
+    "Maven.RecommenderPro [install].executor": "Run",
     "Maven.RecommenderPro [package].executor": "Run",
+    "Maven.StreamingLakeHouse [compile].executor": "Run",
+    "Maven.StreamingLakeHouse [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Workspace/RecommenderPro/LatentFactorModel/src/main/java/org/liu",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\RecommenderPro\LatentFactorModel\src\main\java\org\liu" />
+      <recent name="D:\Workspace\RecommenderPro\LatentFactorModel\src\main\java\org\liu\model" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.liu.app.dim" />
-      <recent name="org.liu.app.dws" />
+      <recent name="org.liu.util" />
+      <recent name="org.liu.client" />
+      <recent name="org.liu.model" />
       <recent name="org.liu.app" />
-      <recent name="org.liu.app.ods" />
+      <recent name="org.liu.app.dim" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="ODS_Movie" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.liu.app.ods.ODS_Movie" />
-      <module name="BatchLakehouse" />
+  <component name="RunManager" selected="Application.TFIDFModel">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="StreamingLakeHouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.liu.app.RecommendApp" />
+      <module name="StreamingLakeHouse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.liu.app.ods.*" />
+          <option name="PATTERN" value="org.liu.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TFIDFModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.liu.app.model.TFIDFModel" />
+      <module name="LatentFactorModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.liu.app.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,7 +163,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ODS_Movie" />
+        <item itemvalue="Application.TFIDFModel" />
+        <item itemvalue="Application.RecommendApp" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -121,7 +186,11 @@
       <updated>1717589565823</updated>
       <workItem from="1717589566952" duration="10265000" />
       <workItem from="1717603017608" duration="145000" />
-      <workItem from="1717678730674" duration="9715000" />
+      <workItem from="1717678730674" duration="9809000" />
+      <workItem from="1717823917653" duration="21116000" />
+      <workItem from="1717915994312" duration="28545000" />
+      <workItem from="1717990452911" duration="8362000" />
+      <workItem from="1718009937269" duration="17971000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -139,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717603159516</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1717688560730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717688560730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
